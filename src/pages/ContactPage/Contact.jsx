@@ -10,6 +10,7 @@ export default function Contacts() {
         <div>Location</div>
         <div>Email</div>
         <div>Facebook</div>
+        fsdfdssf
     </div>
   </div>;
 }
