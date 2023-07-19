@@ -8,10 +8,13 @@
     height: 60px;
     box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
-.header-menu p {
-       margin: 5px 10px;
+.header-menu a {
        font-size: 20px;
-       font-weight: 500;
+       font-weight: 600;
+}
+
+.header-name {
+    margin-left: 10px;
 }
 
 .nav-links {
@@ -21,10 +24,18 @@
     transform: translateX(-50%);
 }
 
+.nav-links a {
+    margin: 0px 10px;
+}
+
 .sm-links {
     position: absolute;
     right: 10px;
 }
 .sm-links a{
     margin: 0 5px;
+}
+
+.nav-links a:hover {
+    color: var(--font-focus-color);
 }

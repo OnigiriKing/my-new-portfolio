@@ -3,11 +3,18 @@
   padding: 0;
 
   --bg-color-gray: #f9f9f9;
+  --font-focus-color: #2176FF;
+
+  --test-color1: #6A66A3;
+  --test-color2: #5603AD;
+  --test-color3: #06BA63;
+  --test-color3: #EC4E20;
 }
 
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .App {

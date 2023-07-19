@@ -1,6 +1,6 @@
 
 export function headerSvg(type, color) {
-  const svgColor = !color ? "currentColor" : "#f9f9f9";
+  const svgColor = !color ? "currentColor" : "#2176FF";
 
   const linkDinSvg = (
     <svg
