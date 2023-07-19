@@ -4,6 +4,8 @@ import StartPage from "./pages/StartPage/StartPage";
 import HeaderMenu from "./pages/Header/HeaderMenu";
 import AboutPage from "./pages/AboutPage/About";
 import WorksScreen from "./pages/MyWorks/Works";
+import Footer from "./pages/Footer/Footer";
+import Contacts from "./pages/ContactPage/Contact";
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       <StartPage />
       <AboutPage />
       <WorksScreen />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
