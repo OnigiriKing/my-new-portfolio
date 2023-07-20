@@ -3,14 +3,32 @@ import "./style.css";
 
 
 export default function Contacts() {
-  return <div className="contacts-wrapper">
-    <p>CONTACT</p>
-    <p>That's how you can contact me:</p>
-    <div>
-        <div>Location</div>
-        <div>Email</div>
-        <div>Facebook</div>
-        fsdfdssf
+  return (
+    <div className="contacts-page">
+      <div className="contacts-wrapper">
+        <div className="contacts-welcome">
+          <p>CONTACT</p>
+          <p> Your next great project starts here!</p>
+        </div>
+
+        <div className="contact-info-wrapper">
+          <div className="contacts-object">
+            <span className="contacts-svg"></span>
+            <div className="contacts-des">
+              <p>Lication</p>
+              <p>Bangkok, Thailand</p>
+            </div>
+          </div>
+
+          <div className="contacts-object">
+            <span className="contacts-svg"></span>
+            <div className="contacts-des">
+              <p>Email</p>
+              <p>oooNikita87@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>;
+  );
 }

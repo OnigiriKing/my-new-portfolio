@@ -1,4 +1,78 @@
-.contacts-wrapper {
+.contacts-page {
     width: 100%;
-    height: 200px;
+    padding: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
 }
+
+.contacts-wrapper {
+    margin: 0 10%;
+}
+
+.contacts-welcome p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.contacts-welcome p:nth-child(1)  {
+    color: var(--font-focus-color);
+    margin-bottom: 1rem;
+}
+
+.contacts-welcome p:nth-child(2) {
+    font-size: 1.8rem;
+    margin-bottom: 3.5rem;
+}
+
+.contact-info-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-svg {
+    padding: 2.3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+}
+
+.contacts-object {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-object span:nth-child(1) {
+    margin-right: 1rem;
+    
+} 
+.contacts-object div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+} 
+
+.contacts-object:nth-child(1) {
+    margin-right: 5rem;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-des {
+    gap: .5rem;
+}
+
+.contacts-des p:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contacts-des p:nth-child(2) {
+    color: var(--footer-font-color);
+}
+
