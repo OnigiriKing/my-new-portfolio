@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import {contactSvg} from "../../svg/contactSvg";
 
 
 export default function Contacts() {
@@ -13,15 +14,15 @@ export default function Contacts() {
 
         <div className="contact-info-wrapper">
           <div className="contacts-object">
-            <span className="contacts-svg"></span>
+            <span className="contacts-svg">{contactSvg(40).mapSvg}</span>
             <div className="contacts-des">
-              <p>Lication</p>
+              <p>Location</p>
               <p>Bangkok, Thailand</p>
             </div>
           </div>
 
           <div className="contacts-object">
-            <span className="contacts-svg"></span>
+            <span className="contacts-svg">{contactSvg(40).emailSvg}</span>
             <div className="contacts-des">
               <p>Email</p>
               <p>oooNikita87@gmail.com</p>
