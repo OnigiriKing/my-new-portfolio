@@ -1,4 +1,4 @@
-.contacts-page {
+#contacts-screen {
     width: 100%;
     padding: 5rem 0rem;
     display: flex;
@@ -67,13 +67,18 @@
     gap: .5rem;
 }
 
-.contacts-des p:nth-child(1) {
+.contacts-des p {
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.contacts-des p:nth-child(2) {
+.contacts-des a {
     color: var(--footer-font-color);
+    font-size: 1.2rem;
+}
+
+.contacts-des a:hover {
+    color: var(--font-focus-color);
 }
 
 .contacts-svg {

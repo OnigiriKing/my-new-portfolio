@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 
   --bg-color-gray: #f9f9f9;
   --font-focus-color: #2176FF;

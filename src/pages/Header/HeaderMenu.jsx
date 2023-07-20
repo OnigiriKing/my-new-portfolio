@@ -25,13 +25,13 @@ export default function HeaderMenu() {
     return (
       <div className="header-menu">
         <div className="header-name">
-          <a>Onigiri_King</a>
+          <a href="#start-screen">Onigiri_King</a>
         </div>
         <div className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contacts</a>
+          <a href="#start-screen">Home</a>
+          <a href="#about-screen">About</a>
+          <a href="#works-screen">Projects</a>
+          <a href="#contacts-screen">Contacts</a>
         </div>
         <div className="sm-links">
           <a

@@ -1,4 +1,4 @@
-.works-screen {
+#works-screen {
   background-color: var(--bg-color-gray);
   height: 100vh;
   display: flex;

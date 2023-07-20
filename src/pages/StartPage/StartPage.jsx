@@ -3,7 +3,7 @@ import "./style.css";
 
 export default function StartPage() {
   return (
-    <div className="start-screen">
+    <div id="start-screen">
       <div className="start-screen-wrapper">
         <div className="start-screen-des">
           <h1>Front-End React Developer</h1>

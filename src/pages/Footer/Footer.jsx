@@ -5,8 +5,8 @@ import "./style.css";
 export default function PageFooter() {
 
     return (
-        <div className="footer-wrapper">
-        
-        </div>
-    )
+      <div id="footer-wrapper">
+        <p>Copyright © 2023. All rights are reserved</p>
+      </div>
+    );
 }

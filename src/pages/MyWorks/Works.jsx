@@ -5,7 +5,7 @@ import "./style.css"
 export default function WorksScreen() {
 
     return (
-      <div className="works-screen">
+      <div id="works-screen">
 
       </div>
     );
