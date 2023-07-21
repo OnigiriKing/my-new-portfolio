@@ -1,1 +1,1 @@
-New version
+typed.js is used
