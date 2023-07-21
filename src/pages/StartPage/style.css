@@ -20,6 +20,32 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10rem;
+}
+
+.start-screen-des  {
+    max-width: 50rem;
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.auto-typing {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sauto-typing p {
+    margin-right: 10px;
+}
+
+.start-screen-des p:nth-child(2) {
+    color: var(--start-page-welcome);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    
 }
 
 .start-screen-welcome {
