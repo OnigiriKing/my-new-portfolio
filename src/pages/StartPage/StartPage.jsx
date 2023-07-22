@@ -7,7 +7,7 @@ function TypeComponent() {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["React Developer", "Front-End Developer"],
+      strings: ["React Developer", "Frontend Developer"],
       backSpeed: 30,
       typeSpeed: 60,
       loop: true,
