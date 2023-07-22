@@ -17,11 +17,17 @@
 
 .start-screen-wrapper {
     display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    gap: 5rem;
+}
+
+.text-photo-wrapper {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    position: relative;
 
 }
 
@@ -69,9 +75,10 @@
 
 .start-screen-photo {
     background-image: url(/src/img/selfie.png);
-    background-image: url(/src/img/selfie2.jpeg);
-    width: 25rem;
-    height: 25rem;
+    /* background-image: url(/src/img/selfie2.jpeg); */
+    width: 20rem;
+    height: 20rem;
+    min-width: 18rem;
     background-position: 50%;
     background-size: cover;
     border: 3px solid var(--bg-footer);
@@ -94,6 +101,44 @@
     to {
         border-radius: 71% 29% 61% 39% / 47% 49% 51% 53%;
     }
+}
+
+.start-screen-skills {
+    width: 100%;
+    gap: 4rem;
+}
+.start-screen-skills p  {
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-right: 3px solid black;
+    padding-right: 1.5rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.skill {
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    position: relative;
+}
+
+.skill svg {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+/* change checkpoint */
+
+@media (max-width: 900px) {
+
 }
 
 

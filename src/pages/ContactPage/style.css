@@ -35,8 +35,13 @@
     padding: 2.3rem;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
-
+    position: relative;
 }
+
+.contacts-svg svg {
+    position: absolute;
+    transform: translate(-50%, -50%);
+} 
 
 .contacts-object {
     display: flex;
@@ -81,11 +86,4 @@
     color: var(--font-focus-color);
 }
 
-.contacts-svg {
-    position: relative;
-}
 
-.contacts-svg svg {
-    position: absolute;
-    transform: translate(-50%, -50%);
-} 
