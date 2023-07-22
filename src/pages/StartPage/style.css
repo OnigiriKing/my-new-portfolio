@@ -20,7 +20,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
+    position: relative;
+
 }
 
 .start-screen-des  {
@@ -28,6 +30,7 @@
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 600;
+    color: var(--bg-footer);
 }
 
 .auto-typing {
@@ -61,6 +64,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: left;
+}
+
+
+.start-screen-photo {
+    background-image: url(/src/img/selfie.png);
+    background-image: url(/src/img/selfie2.jpeg);
+    width: 30rem;
+    height: 30rem;
+    background-position: 50%;
+    background-size: cover;
+    border: 3px solid var(--bg-footer);
+
 }
 
 

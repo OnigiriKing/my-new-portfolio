@@ -11,7 +11,7 @@ function TypeComponent() {
       backSpeed: 30,
       typeSpeed: 60,
       loop: true,
-      loopCount: Infinity,
+      loopCount: 1,
     });
 
     return () => {
@@ -39,7 +39,7 @@ export default function StartPage() {
             Bangkok, Thailand.
           </p>
         </div>
-        <div className="start-screen-photo">Photo here</div>
+        <div className="start-screen-photo"></div>
       </div>
       <div className="start-screen-skills">
         <div>Tech Stack</div>
