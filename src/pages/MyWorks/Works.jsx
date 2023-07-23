@@ -1,8 +1,12 @@
 import React from "react";
 import "./style.css"
+import { portfolioSvg } from "../../svg/portfolioSvg";
 
 
 export default function WorksScreen() {
+
+
+
 
     return (
       <div id="works-screen">
@@ -13,7 +17,11 @@ export default function WorksScreen() {
           </div>
           <div className="portfolio-projects">
             <div className="portfolio-website">
-              <div className="website-img">Image </div>
+              <div className="website-img">
+              <a>
+                <img></img>
+              </a>
+               </div>
               <div className="website-info">
                 <p>Onigiri Crypto</p>
                 <p>
@@ -25,12 +33,15 @@ export default function WorksScreen() {
                   <div> Vanila Css</div>
                 </div>
                 <div className="website-links">
-                  <a>Code</a>
-                  <a>Live Demo</a>
+                  <a href="Link" target="_blank">
+                    Code{portfolioSvg(50).github}
+                  </a>
+                  <a href="Link" target="_blank">
+                    Live Demo{portfolioSvg(50).link}
+                  </a>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

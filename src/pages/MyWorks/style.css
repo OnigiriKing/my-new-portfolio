@@ -84,8 +84,18 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  gap: 2.5rem;
+  gap: 2rem;
    font-size: 1.3rem;
     font-weight: 500;
+    margin-top: 1.5rem;
 }
 
+.website-links a {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.website-links a:hover {
+  color: var(--font-focus-color);
+}
