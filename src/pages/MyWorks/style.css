@@ -1,7 +1,91 @@
 #works-screen {
   background-color: var(--bg-color-gray);
-  height: 100vh;
   display: flex;
   justify-content: center;
+  padding: 8rem 0;
+}
+
+
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.portfolio-text p:nth-child(1) {
+    color: var(--font-focus-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+   margin-bottom: 1rem;
+
+}
+.portfolio-text p:nth-child(2) {
+    color: var(--bg-footer);
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 4rem;
+}
+
+.portfolio-projects {
+  display: grid;
+  gap: 4rem;
+}
+
+.portfolio-website {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  border-radius: 1.7rem;
+  width: 60rem;
+  height: 30rem;
+  gap: 3rem;
+}
+
+.website-info {
+  display: grid;
+  gap: 1.5rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.website-info p:nth-child(1) {
+    color: var(--bg-footer);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+
+}
+.website-info p:nth-child(2) {
+  color: var(--footer-font-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.skills-used {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 1rem;
+}
+
+.skills-used div {
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+.website-links {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 2.5rem;
+   font-size: 1.3rem;
+    font-weight: 500;
 }
 
