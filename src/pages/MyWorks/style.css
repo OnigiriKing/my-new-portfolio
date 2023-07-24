@@ -9,7 +9,9 @@
 .portfolio-wrapper {
   display: flex;
   flex-direction: column;
-
+  width: 100%;
+  max-width: 61rem;
+  margin: 0 5rem;
 }
 
 .portfolio-text p:nth-child(1) {
@@ -30,6 +32,9 @@
 .portfolio-projects {
   display: grid;
   gap: 4rem;
+  padding: 0 0rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  border-radius: 1.7rem;
 }
 
 .portfolio-website {
@@ -37,11 +42,23 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-  border-radius: 1.7rem;
-  width: 60rem;
   height: 30rem;
+  margin: 0 1.3rem;
   gap: 3rem;
+}
+
+.website-img {
+  overflow: hidden;
+  width: 35rem;
+  height: 27rem;
+  background-color: rgba(117, 117, 117, 0.2);border-radius: 1.7rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+
+.website-img img {
+  height: auto;
+  width: 100%;
 }
 
 .website-info {
@@ -98,4 +115,9 @@
 
 .website-links a:hover {
   color: var(--font-focus-color);
+}
+
+
+@media (max-width: 1025px) {
+
 }

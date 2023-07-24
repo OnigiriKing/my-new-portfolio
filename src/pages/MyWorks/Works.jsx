@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css"
 import { portfolioSvg } from "../../svg/portfolioSvg";
+import Nike from "../../img/Nike.png";
 
 
 export default function WorksScreen() {
@@ -18,10 +19,10 @@ export default function WorksScreen() {
           <div className="portfolio-projects">
             <div className="portfolio-website">
               <div className="website-img">
-              <a>
-                <img></img>
-              </a>
-               </div>
+                <a href="Link" target="_blank">
+                  <img src={Nike} />
+                </a>
+              </div>
               <div className="website-info">
                 <p>Onigiri Crypto</p>
                 <p>
