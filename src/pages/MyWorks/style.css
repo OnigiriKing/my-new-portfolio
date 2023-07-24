@@ -127,14 +127,23 @@
 
 
 @media (max-width: 1000px) {
+  #works-screen {
+  padding: 7rem 0;
+}
 
   .portfolio-projects {
     height: 52em;
     
 }
 
+.portfolio-text {
+  display: grid;
+  text-align: center;
+}
+
   .portfolio-wrapper {
   max-width: 50rem;
+
 }
 
 
