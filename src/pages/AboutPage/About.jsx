@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.css";
 import aboutImg from "../../img/aboutImg.png";
-// import aboutImg2 from "../../img/aboutImg2.png";
-// import aboutImg3 from "../../img/aboutImg3.png";
+
 
 
 export default function AboutPage() {

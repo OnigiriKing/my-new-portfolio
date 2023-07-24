@@ -75,7 +75,6 @@
 
 .start-screen-photo {
     background-image: url(/src/img/selfie.png);
-    /* background-image: url(/src/img/selfie2.jpeg); */
     width: 20rem;
     height: 20rem;
     min-width: 18rem;

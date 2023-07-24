@@ -12,7 +12,7 @@ function TypeComponent() {
       backSpeed: 30,
       typeSpeed: 60,
       loop: true,
-      loopCount: 1,
+      loopCount: Infinity,
     });
 
     return () => {
