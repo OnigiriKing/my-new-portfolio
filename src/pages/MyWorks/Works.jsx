@@ -24,7 +24,7 @@ export default function WorksScreen() {
                 </a>
               </div>
               <div className="website-info">
-                <p>Nike</p>
+                <p>Nike 🏃</p>
                 <p>
                   Nike's website is the official online platform for the
                   renowned sportswear and athletic footwear brand. Shop the

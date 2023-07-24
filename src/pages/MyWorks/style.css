@@ -126,6 +126,29 @@
 }
 
 
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
 
+  .portfolio-projects {
+    height: 52em;
+    
+}
+
+  .portfolio-wrapper {
+  max-width: 50rem;
+}
+
+
+  .portfolio-website {
+  flex-direction: column;
+  height: 50rem;
+  margin: 1rem 2rem;
+  gap: 2rem;
+}
+
+.website-img {
+  overflow: hidden;
+  width: fit-content;
+  height: 25rem;
+  border-radius: 1.7rem;
+}
 }

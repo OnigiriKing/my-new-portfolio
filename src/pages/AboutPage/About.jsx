@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="about-des">
           <p>ABOUT ME</p>
           <p>
-            Passionate Front-End React Developer based in Bangkok, Thailand.
+            Passionate Front-End React Developer based in Bangkok, Thailand 🇹🇭
           </p>
           <p>
             Greetings! I'm a dynamic junior front-end React developer,
