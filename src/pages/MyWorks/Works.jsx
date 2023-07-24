@@ -19,15 +19,17 @@ export default function WorksScreen() {
           <div className="portfolio-projects">
             <div className="portfolio-website">
               <div className="website-img">
-                <a href="Link" target="_blank">
+                <a href="https://www.nike.com/th/" target="_blank">
                   <img src={Nike} />
                 </a>
               </div>
               <div className="website-info">
-                <p>Onigiri Crypto</p>
+                <p>Nike</p>
                 <p>
-                  Onigiri Crypto is a cryptocurrency price browsing website that
-                  provides real-time data sourced from the Bitfinex API.
+                  Nike's website is the official online platform for the
+                  renowned sportswear and athletic footwear brand. Shop the
+                  latest collections and iconic products for sports, fitness,
+                  and style.
                 </p>
                 <div className="skills-used">
                   <div>React</div>
@@ -37,7 +39,7 @@ export default function WorksScreen() {
                   <a href="Link" target="_blank">
                     Code{portfolioSvg(50).github}
                   </a>
-                  <a href="Link" target="_blank">
+                  <a href="https://www.nike.com/th/" target="_blank">
                     Live Demo{portfolioSvg(50).link}
                   </a>
                 </div>
