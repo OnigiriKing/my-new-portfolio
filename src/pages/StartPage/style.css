@@ -29,7 +29,6 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
-
 }
 
 .start-screen-des  {
@@ -111,7 +110,7 @@
 .start-screen-skills p  {
     font-size: 1.3rem;
     font-weight: 600;
-    border-right: 3px solid black;
+    border-right: 2px solid black;
     padding-right: 1.5rem;
 }
 
@@ -139,7 +138,32 @@
 /* change checkpoint */
 
 @media (max-width: 900px) {
+    #start-screen {
+        height: auto;
+        padding: 8rem 0;
 
+    }
+    .text-photo-wrapper {
+    flex-direction: column-reverse;
+    gap: 3rem;
+}
+
+.auto-typing {
+    justify-content: center;
+}
+
+.start-screen-skills {
+    flex-direction: column;
+    gap: 2rem;
+}
+.start-screen-skills p  {
+    text-align: center;
+
+    border-right: none;
+    border-bottom: 2px solid black;
+    padding: 0 0.5rem;
+    padding-bottom: 1rem;
+}
 }
 
 
