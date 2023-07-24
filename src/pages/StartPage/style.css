@@ -149,6 +149,17 @@
 
 .auto-typing {
     justify-content: center;
+    text-align: center;
+}
+
+.start-screen-des {
+    gap: 3rem;
+}
+
+.start-screen-des p:nth-child(2) {
+     text-align: center;
+
+    
 }
 
 .start-screen-skills {
