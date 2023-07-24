@@ -5,6 +5,7 @@
     color: #FFF;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 #footer-wrapper p {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { headerSvg } from "../../svg/headerSvg";
+import { headerSvg, menuSvg} from "../../svg/headerSvg";
 
 export default function HeaderMenu() {
   
@@ -25,13 +25,14 @@ export default function HeaderMenu() {
     return (
       <div className="header-menu">
         <div className="header-name">
-          <a href="#start-screen">Onigiri_King</a>
+          <a href="#start-screen">Onigiri King</a>
         </div>
         <div className="nav-links">
           <a href="#start-screen">Home</a>
           <a href="#about-screen">About</a>
           <a href="#works-screen">Projects</a>
           <a href="#contacts-screen">Contacts</a>
+          <div className="mobile-menu">{menuSvg(40)}</div>
         </div>
         <div className="sm-links">
           <a

@@ -37,13 +37,25 @@
     margin: 0 5px;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .mobile-menu:hover svg {
     color: var(--font-focus-color);
 }
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
 
 
 /* change checkpoint */
 
 @media (max-width: 900px) {
+    .nav-links a {
+        display: none;
+    }
 
+    .mobile-menu {
+    display: flex;
+}
 }
