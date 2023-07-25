@@ -19,7 +19,7 @@ export default function DropMenu() {
 
 
     return (
-      <div className="drop-menu menu-open">
+      <div className="drop-menu">
         <div className="menu-close-button" {...closeMenu()}>
           {closeButton(50)}
         </div>
