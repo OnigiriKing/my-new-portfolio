@@ -19,8 +19,12 @@ export default function WorksScreen() {
           <div className="portfolio-projects">
             <div className="portfolio-website">
               <div className="website-img">
-                <a href="https://www.nike.com/th/" target="_blank">
-                  <img src={Nike} />
+                <a
+                  href="https://www.nike.com/th/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={Nike} alt="nikeWebsite"/>
                 </a>
               </div>
               <div className="website-info">
@@ -36,10 +40,14 @@ export default function WorksScreen() {
                   <div> Vanila Css</div>
                 </div>
                 <div className="website-links">
-                  <a href="Link" target="_blank">
+                  <a href="Link" target="_blank" rel="noreferrer">
                     Code{portfolioSvg(50).github}
                   </a>
-                  <a href="https://www.nike.com/th/" target="_blank">
+                  <a
+                    href="https://www.nike.com/th/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo{portfolioSvg(50).link}
                   </a>
                 </div>
