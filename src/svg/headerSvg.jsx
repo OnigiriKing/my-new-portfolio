@@ -173,7 +173,7 @@ export function headerSvg(type, color) {
   );
 
   const resultSvg =
-    type == "ln" ? linkDinSvg : type == "git" ? gitHubSvg : instSvg;
+    type === "ln" ? linkDinSvg : type === "git" ? gitHubSvg : instSvg;
 
   return resultSvg;
 }

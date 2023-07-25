@@ -22,7 +22,7 @@ export default function Contacts() {
             <span className="contacts-svg">{contactSvg(40).mapSvg}</span>
             <div className="contacts-des">
               <p>Location</p>
-              <a href={mapLink} target="_blank">
+              <a href={mapLink} target="_blank" rel="noreferrer">
                 Bangkok, Thailand
               </a>
             </div>

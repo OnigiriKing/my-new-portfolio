@@ -51,6 +51,7 @@ export default function HeaderMenu() {
           <a
             href="https://www.linkedin.com/in/onigiriking/"
             target="_blank"
+            rel="noreferrer"
             {...getMouseHandlers("ln")}
           >
             {headerSvg("ln", isHover.ln)}
@@ -58,6 +59,7 @@ export default function HeaderMenu() {
           <a
             href="https://github.com/OnigiriKing"
             target="_blank"
+            rel="noreferrer"
             {...getMouseHandlers("git")}
           >
             {headerSvg("git", isHover.git)}
@@ -65,6 +67,7 @@ export default function HeaderMenu() {
           <a
             href="https://www.instagram.com/onigiri_king/"
             target="_blank"
+            rel="noreferrer"
             {...getMouseHandlers("inst")}
           >
             {headerSvg("inst", isHover.inst)}

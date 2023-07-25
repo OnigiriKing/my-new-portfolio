@@ -9,7 +9,7 @@ export default function AboutPage() {
     return (
       <div id="about-screen">
         <div className="about-image">
-          <img src={aboutImg} />
+          <img src={aboutImg} alt="aboutImage"/>
         </div>
         <div className="about-des">
           <p>ABOUT ME</p>
