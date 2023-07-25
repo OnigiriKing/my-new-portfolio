@@ -9,6 +9,17 @@ export default function HeaderMenu() {
   function changeHover(type, state) {
     setHover((prevState) => ({ ...prevState, [type]: state }));
   }
+
+  function openMenu() {
+    function open() {
+      document.querySelector(".drop-menu").classList.add("menu-open");
+    }
+    return {
+      onClick: function () {
+        open();
+      },
+    };
+  }
   
 
   function getMouseHandlers(mediaType) {
@@ -32,7 +43,9 @@ export default function HeaderMenu() {
           <a href="#about-screen">About</a>
           <a href="#works-screen">Projects</a>
           <a href="#contacts-screen">Contacts</a>
-          <div className="mobile-menu">{menuSvg(40)}</div>
+          <div className="mobile-menu" {...openMenu()}>
+            {menuSvg(40)}
+          </div>
         </div>
         <div className="sm-links">
           <a
