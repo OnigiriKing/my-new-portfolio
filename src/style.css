@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+
 
   --bg-color-gray: #f9f9f9;
   --font-focus-color: #2176FF;
