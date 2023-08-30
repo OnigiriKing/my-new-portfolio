@@ -61,6 +61,7 @@
   height: auto;
   width: 100%;
    transform: translateY(0%);
+   transition: 15s ease-in-out;
 }
 
 
