@@ -61,12 +61,11 @@
   height: auto;
   width: 100%;
    transform: translateY(0%);
-   transition: 15s ease-in-out;
 }
 
 
 .website-img img:hover {
-  transform: translateY(-85.5%);
+  transform: translateY(-67%);
   transition: 15s ease-in-out;
 }
 
