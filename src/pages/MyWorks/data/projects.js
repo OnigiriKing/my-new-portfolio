@@ -1,4 +1,5 @@
 import kumoMarket from "./img/kumoMarket.png";
+import motoVibe from "./img/motoVibe.png"
 
 const projectsList = {
   KumoMarket: {
@@ -10,6 +11,18 @@ const projectsList = {
     codeLink: "https://github.com/OnigiriKing/kumo-market",
     demoLink: "https://kumo-market.netlify.app",
     key: "kumoMarket",
+    transform: "translateY(-67%)",
+  },
+  MotoVibe: {
+    name: "Moto Vibe 🛵",
+    img: motoVibe,
+    des: "Moto Vibe is a straightforward and practical website for renting motorbikes in Bangkok. It offers an easy-to-use platform for users to browse, select, and book motorbikes conveniently.",
+    language: "React",
+    css: "SCSS",
+    codeLink: "https://github.com/OnigiriKing/moto-vibe",
+    demoLink: "https://moto-vibe.netlify.app",
+    key: "kumoMarket",
+    transform: "translateY(-80%)",
   },
 };
 
