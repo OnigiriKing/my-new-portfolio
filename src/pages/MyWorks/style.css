@@ -49,6 +49,10 @@
   gap: 3rem;
 }
 
+.website-reverse {
+  flex-direction: row-reverse;
+}
+
 .website-img {
   overflow: hidden;
   width: 35rem;

@@ -15,11 +15,11 @@ export default function WorksScreen() {
   }
   
   function DisplayProjects() {
-    return Object.keys(projectsList).map((key) => {
+    return Object.keys(projectsList).map((key, index) => {
       const el = projectsList[key];
 
       return (
-        <div className="portfolio-website" key={el.key}>
+        <div className={`portfolio-website ${(index+1)%2===0?"website-reverse": ""}`} key={el.key}>
           <div className="website-img">
             <a
               href={el.demoLink}
