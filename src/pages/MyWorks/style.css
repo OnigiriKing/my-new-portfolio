@@ -32,19 +32,20 @@
 
 .portfolio-projects {
   display: grid;
-  gap: 4rem;
+  gap: 2rem;
   padding: 0 0rem;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-  border-radius: 1.7rem;
 }
 
 .portfolio-website {
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  background-color: #fff;
+  border-radius: 1.7rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 28rem;
   margin: 0 1.3rem;
+  padding: 1.5rem;
   gap: 3rem;
 }
 
@@ -125,11 +126,6 @@
 @media (max-width: 1000px) {
   #works-screen {
   padding: 7rem 0;
-}
-
-  .portfolio-projects {
-    height: 52em;
-    
 }
 
 .portfolio-text {
