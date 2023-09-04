@@ -4,13 +4,30 @@ import { portfolioSvg } from "../../svg/portfolioSvg";
 import projectsList from "./data/projects";
 
 export default function WorksScreen() {
+  function scroll(e, translate, back = false) {
+    const element = e.currentTarget.querySelector("img");
+    if (back === false) {
+      element.style.transform = translate;
+    } 
+    if (back === true) {
+      element.style.transform = "translateY(0%)";
+    } 
+  }
+  
   function DisplayProjects() {
     return Object.keys(projectsList).map((key) => {
       const el = projectsList[key];
+
       return (
         <div className="portfolio-website" key={el.key}>
           <div className="website-img">
-            <a href={el.demoLink} target="_blank" rel="noreferrer">
+            <a
+              href={el.demoLink}
+              target="_blank"
+              rel="noreferrer"
+              onMouseEnter={(e) => scroll(e, el.transform )}
+              onMouseLeave={(e) => scroll(e, 0, true)}
+            >
               <img src={el.img} alt="Website" />
             </a>
           </div>
