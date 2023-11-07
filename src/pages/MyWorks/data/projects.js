@@ -1,5 +1,5 @@
-import kumoMarket from "./img/kumoMarket.png";
-import motoVibe from "./img/motoVibe.png"
+import kumoMarket from "./img/kumoMarket/kumoMarket.png";
+import motoVibe from "./img/motoVibe/motoVibe.png"
 
 const projectsList = {
   KumoMarket: {
