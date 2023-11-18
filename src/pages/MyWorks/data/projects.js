@@ -1,5 +1,6 @@
 import kumoMarket from "./img/kumoMarket/kumoMarket.png";
 import motoVibe from "./img/motoVibe/motoVibe.png"
+import onigiriCrypto from "./img/onigiriCrypto/onigiriCrypto.png";
 
 const projectsList = {
   KumoMarket: {
@@ -23,6 +24,17 @@ const projectsList = {
     demoLink: "https://moto-vibe.netlify.app",
     key: "kumoMarket",
     transform: "translateY(-80%)",
+  },
+  onigiriCrypto: {
+    name: "Onigiri Crypto ⚡️",
+    img: onigiriCrypto,
+    des: "Onigiri Crypto utilizes the Bitfinex API to deliver real-time cryptocurrency prices, offering a streamlined platform for tracking market trends and making informed decisions in the dynamic world of digital assets.",
+    language: "React",
+    css: "SCSS",
+    codeLink: "https://github.com/OnigiriKing/OnigiriCrypto",
+    demoLink: "https://onigiri-crypto.netlify.app",
+    key: "onigiriCrypto",
+    transform: "translateY(-75%)",
   },
 };
 
