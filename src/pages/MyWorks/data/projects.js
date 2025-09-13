@@ -1,5 +1,5 @@
 import kumoMarket from "./img/kumoMarket/kumoMarket.png";
-import motoVibe from "./img/motoVibe/motoVibe.png"
+import motoVibe from "./img/motoVibe/motoVibe.png";
 import onigiriCrypto from "./img/onigiriCrypto/onigiriCrypto.png";
 
 const projectsList = {
@@ -13,6 +13,7 @@ const projectsList = {
     demoLink: "https://kumo-market.netlify.app",
     key: "kumoMarket",
     transform: "translateY(-67%)",
+    transformMobile: "translateY(-49%)",
   },
   MotoVibe: {
     name: "Moto Vibe 🛵",
@@ -22,8 +23,9 @@ const projectsList = {
     css: "SCSS",
     codeLink: "https://github.com/OnigiriKing/moto-vibe",
     demoLink: "https://moto-vibe.netlify.app",
-    key: "kumoMarket",
+    key: "MotoVibe",
     transform: "translateY(-80%)",
+    transformMobile: "translateY(-67.5%)",
   },
   onigiriCrypto: {
     name: "Onigiri Crypto ⚡️",
@@ -34,7 +36,8 @@ const projectsList = {
     codeLink: "https://github.com/OnigiriKing/OnigiriCrypto",
     demoLink: "https://onigiri-crypto.netlify.app",
     key: "onigiriCrypto",
-    transform: "translateY(-75%)",
+    transform: "translateY(-67%)",
+    transformMobile: "translateY(-49%)",
   },
 };
 

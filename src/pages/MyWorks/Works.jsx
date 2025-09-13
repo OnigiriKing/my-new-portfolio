@@ -3,25 +3,20 @@ import { portfolioSvg } from "../../svg/portfolioSvg";
 import projectsList from "./data/projects";
 
 export default function WorksScreen() {
-  function scroll(e, translate, back = false) {
-    const element = e.currentTarget.querySelector("img");
-    if (back === false) {
-      element.style.transform = translate;
-    }
-    if (back === true) {
-      element.style.transform = "translateY(0%)";
-    }
+  function scroll(e, translate) {
+    const img = e.currentTarget.querySelector("img");
+    img.style.transform = translate ?? "translateY(0%)";
   }
 
   function DisplayProjects() {
     return Object.keys(projectsList).map((key, index) => {
       const el = projectsList[key];
+      const icons = portfolioSvg(50);
+
 
       return (
         <div
-          className={`portfolio-website ${
-            (index + 1) % 2 === 0 ? "website-reverse" : ""
-          }`}
+          className={`portfolio-website ${index % 2 ? "website-reverse" : ""}`}
           key={el.key}
         >
           <div className="website-img">
@@ -30,7 +25,9 @@ export default function WorksScreen() {
               target="_blank"
               rel="noreferrer"
               onMouseEnter={(e) => scroll(e, el.transform)}
-              onMouseLeave={(e) => scroll(e, 0, true)}
+              onMouseLeave={(e) => scroll(e)}
+              onFocus={(e) => scroll(e, el.transform)}
+              onBlur={(e) => scroll(e)}
             >
               <img src={el.img} alt="Website" />
             </a>
@@ -44,10 +41,10 @@ export default function WorksScreen() {
             </div>
             <div className="website-links">
               <a href={el.codeLink} target="_blank" rel="noreferrer">
-                Code{portfolioSvg(50).github}
+                Code{icons.github}
               </a>
               <a href={el.demoLink} target="_blank" rel="noreferrer">
-                Live Demo{portfolioSvg(50).link}
+                Live Demo{icons.link}
               </a>
             </div>
           </div>
