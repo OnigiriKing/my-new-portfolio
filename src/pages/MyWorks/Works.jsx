@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 import { portfolioSvg } from "../../svg/portfolioSvg";
 import projectsList from "./data/projects";
@@ -8,24 +7,29 @@ export default function WorksScreen() {
     const element = e.currentTarget.querySelector("img");
     if (back === false) {
       element.style.transform = translate;
-    } 
+    }
     if (back === true) {
       element.style.transform = "translateY(0%)";
-    } 
+    }
   }
-  
+
   function DisplayProjects() {
     return Object.keys(projectsList).map((key, index) => {
       const el = projectsList[key];
 
       return (
-        <div className={`portfolio-website ${(index+1)%2===0?"website-reverse": ""}`} key={el.key}>
+        <div
+          className={`portfolio-website ${
+            (index + 1) % 2 === 0 ? "website-reverse" : ""
+          }`}
+          key={el.key}
+        >
           <div className="website-img">
             <a
               href={el.demoLink}
               target="_blank"
               rel="noreferrer"
-              onMouseEnter={(e) => scroll(e, el.transform )}
+              onMouseEnter={(e) => scroll(e, el.transform)}
               onMouseLeave={(e) => scroll(e, 0, true)}
             >
               <img src={el.img} alt="Website" />

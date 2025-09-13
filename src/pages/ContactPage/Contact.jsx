@@ -1,13 +1,10 @@
-import React from "react";
 import "./style.css";
-import {contactSvg} from "../../svg/contactSvg";
-
+import { contactSvg } from "../../svg/contactSvg";
 
 export default function Contacts() {
-
   const emailLink = `mailto:oooNikita87@gmail.com`;
 
-  const mapLink = `https://www.google.com/maps/place/Bangkok`;
+  const mapLink = `https://www.google.com/maps/place/Tokyo`;
 
   return (
     <div id="contacts-screen">
@@ -23,7 +20,7 @@ export default function Contacts() {
             <div className="contacts-des">
               <p>Location</p>
               <a href={mapLink} target="_blank" rel="noreferrer">
-                Bangkok, Thailand
+                Tokyo, Japan
               </a>
             </div>
           </div>

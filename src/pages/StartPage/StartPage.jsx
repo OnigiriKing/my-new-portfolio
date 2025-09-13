@@ -38,7 +38,7 @@ export default function StartPage() {
             </div>
             <p>
               Hello, I'm Nick – a dedicated Front-end React Developer based in
-              Bangkok, Thailand.
+              Tokyo, Japan.
             </p>
           </div>
           <div className="start-screen-photo"></div>
