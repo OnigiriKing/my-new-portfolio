@@ -24,10 +24,15 @@ export default function WorksScreen() {
               href={el.demoLink}
               target="_blank"
               rel="noreferrer"
-              onMouseEnter={(e) => scroll(e, el.transform)}
+              onMouseEnter={(e) =>
+                scroll(
+                  e,
+                  window.matchMedia("(max-width: 1000px)").matches
+                    ? el.transformMobile
+                    : el.transform
+                )
+              }
               onMouseLeave={(e) => scroll(e)}
-              onFocus={(e) => scroll(e, el.transform)}
-              onBlur={(e) => scroll(e)}
             >
               <img src={el.img} alt="Website" />
             </a>
