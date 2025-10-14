@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Typed from "typed.js";
 import { skillsSvg } from "../../svg/skillsSvg";
+import selfie from "../../img/selfie.webp"
 
 function TypeComponent() {
   const el = React.useRef(null);
@@ -41,7 +42,9 @@ export default function StartPage() {
               Tokyo, Japan.
             </p>
           </div>
-          <div className="start-screen-photo"></div>
+          <div className="start-screen-photo">
+            <img src={selfie} alt="img" fetchPriority="high"/>
+          </div>
         </div>
         <div className="start-screen-skills">
           <p>Tech Stack</p>

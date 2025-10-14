@@ -74,13 +74,9 @@
 }
 
 
-.start-screen-photo {
-    background-image: url(/src/img/selfie.webp);
-    width: 20rem;
+.start-screen-photo img {
     height: 20rem;
-    min-width: 18rem;
-    background-position: 50%;
-    background-size: cover;
+    transform: scale(1.1);
     border: 3px solid var(--bg-footer);
     border-radius: 71% 29% 61% 39% / 47% 49% 51% 53%;
     animation:  BrAnimation 8s ease-in-out infinite;
