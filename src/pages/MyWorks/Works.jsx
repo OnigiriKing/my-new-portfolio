@@ -33,7 +33,7 @@ export default function WorksScreen() {
               }
               onMouseLeave={(e) => scroll(e)}
             >
-              <img src={el.img} alt="Website" fetchPriority="low" />
+              <img src={el.img} alt="Website" />
             </a>
           </div>
           <div className="website-info">
