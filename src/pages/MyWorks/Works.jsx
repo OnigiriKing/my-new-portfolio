@@ -13,7 +13,6 @@ export default function WorksScreen() {
       const el = projectsList[key];
       const icons = portfolioSvg(50);
 
-
       return (
         <div
           className={`portfolio-website ${index % 2 ? "website-reverse" : ""}`}
@@ -34,7 +33,7 @@ export default function WorksScreen() {
               }
               onMouseLeave={(e) => scroll(e)}
             >
-              <img src={el.img} alt="Website" />
+              <img src={el.img} alt="Website" fetchPriority="low" />
             </a>
           </div>
           <div className="website-info">

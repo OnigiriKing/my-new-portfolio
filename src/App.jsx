@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 import StartPage from "./pages/StartPage/StartPage";
 import HeaderMenu from "./pages/Header/HeaderMenu";

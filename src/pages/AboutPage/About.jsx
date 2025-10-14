@@ -1,5 +1,5 @@
 import "./style.css";
-import aboutImg from "../../img/aboutImg.png";
+import aboutImg from "../../img/aboutImg.webp";
 
 export default function AboutPage() {
   return (

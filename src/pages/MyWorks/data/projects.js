@@ -1,6 +1,6 @@
-import kumoMarket from "./img/kumoMarket/kumoMarket.png";
-import motoVibe from "./img/motoVibe/motoVibe.png";
-import onigiriCrypto from "./img/onigiriCrypto/onigiriCrypto.png";
+import kumoMarket from "./img/kumoMarket/kumoMarket.webp";
+import motoVibe from "./img/motoVibe/motoVibe.webp";
+import onigiriCrypto from "./img/onigiriCrypto/onigiriCrypto.webp";
 
 const projectsList = {
   KumoMarket: {
