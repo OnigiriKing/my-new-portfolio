@@ -29,8 +29,11 @@ function TypeComponent() {
 }
 
 export default function StartPage() {
+
+  const skills = React.useMemo(() => skillsSvg(40), []);
+  
   return (
-    <div id="start-screen">
+    <main id="start-screen">
       <div className="start-screen-wrapper">
         <div className="text-photo-wrapper">
           <div className="start-screen-des">
@@ -43,21 +46,27 @@ export default function StartPage() {
             </p>
           </div>
           <div className="start-screen-photo">
-            <img src={selfie} alt="img" fetchPriority="high"/>
+            <img
+              src={selfie}
+              alt="img"
+              fetchPriority="high"
+              decoding="async"
+              loading="eager"
+            />
           </div>
         </div>
         <div className="start-screen-skills">
           <p>Tech Stack</p>
           <div>
             <ul className="skill-list">
-              <li className="skill">{skillsSvg(40).react}</li>
-              <li className="skill">{skillsSvg(40).javaScript}</li>
-              <li className="skill">{skillsSvg(40).css}</li>
-              <li className="skill">{skillsSvg(40).html}</li>
+              <li className="skill">{skills.react}</li>
+              <li className="skill">{skills.javaScript}</li>
+              <li className="skill">{skills.css}</li>
+              <li className="skill">{skills.html}</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
