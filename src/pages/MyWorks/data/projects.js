@@ -1,8 +1,22 @@
 import kumoMarket from "./img/kumoMarket/kumoMarket.webp";
 import motoVibe from "./img/motoVibe/motoVibe.webp";
 import onigiriCrypto from "./img/onigiriCrypto/onigiriCrypto.webp";
+import iWishYouCouldReadThis from "./img/IWishYouCouldReadThis/"
+
 
 const projectsList = {
+  IWishYouCouldReadThis: {
+    name: "I Wish You Could Read This",
+    img: iWishYouCouldReadThis,
+    des: "Kumo Market is a minimalist e-commerce platform designed for straightforward and efficient online shopping. Discover a carefully curated selection of products in a clean and user-friendly environment.",
+    language: "React",
+    css: "SCSS",
+    codeLink: "https://github.com/OnigiriKing/kumo-market",
+    demoLink: "https://kumo-market.netlify.app",
+    key: "kumoMarket",
+    transform: "translateY(-67%)",
+    transformMobile: "translateY(-49%)",
+  },
   KumoMarket: {
     name: "Kumo Market ☁️",
     img: kumoMarket,
