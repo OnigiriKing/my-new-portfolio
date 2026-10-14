@@ -1,80 +1,47 @@
-import React from "react";
 import "./style.css";
 import { headerSvg, menuSvg } from "../../svg/headerSvg";
 
-export default function HeaderMenu() {
-  const [isHover, setHover] = React.useState({
-    ln: false,
-    git: false,
-    inst: false,
-  });
-
-  function changeHover(type, state) {
-    setHover((prevState) => ({ ...prevState, [type]: state }));
-  }
-
-  function openMenu() {
-    function open() {
-      document.querySelector(".drop-menu").classList.add("menu-open");
-    }
-    return {
-      onClick: function () {
-        open();
-      },
-    };
-  }
-
-  function getMouseHandlers(mediaType) {
-    return {
-      onMouseEnter: function () {
-        changeHover(mediaType, true);
-      },
-      onMouseLeave: function () {
-        changeHover(mediaType, false);
-      },
-    };
-  }
-
+export default function HeaderMenu({ isMenuOpen, menuButtonRef, onMenuOpen }) {
   return (
-    <div className="header-menu">
-      <div className="header-name">
-        <a href="#start-screen">Onigiri King</a>
-      </div>
-      <div className="nav-links">
+    <header className="header-menu">
+      <a className="header-name" href="#start-screen">
+        Nikita Zamyshliaev
+      </a>
+      <nav className="nav-links" aria-label="Main navigation">
         <a href="#start-screen">Home</a>
         <a href="#about-screen">About</a>
         <a href="#works-screen">Projects</a>
         <a href="#contacts-screen">Contacts</a>
-        <div className="mobile-menu" {...openMenu()}>
-          {menuSvg(40)}
-        </div>
-      </div>
-      <div className="sm-links">
+        <button
+          ref={menuButtonRef}
+          className="mobile-menu"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="mobile-navigation"
+          aria-expanded={isMenuOpen}
+          onClick={onMenuOpen}
+        >
+          {menuSvg(34)}
+        </button>
+      </nav>
+      <nav className="sm-links" aria-label="Social links">
         <a
           href="https://www.linkedin.com/in/onigiriking/"
           target="_blank"
           rel="noreferrer"
-          {...getMouseHandlers("ln")}
+          aria-label="LinkedIn profile"
         >
-          {headerSvg("ln", isHover.ln)}
+          {headerSvg("ln")}
         </a>
         <a
           href="https://github.com/OnigiriKing"
           target="_blank"
           rel="noreferrer"
-          {...getMouseHandlers("git")}
+          aria-label="GitHub profile"
         >
-          {headerSvg("git", isHover.git)}
+          {headerSvg("git")}
         </a>
-        <a
-          href="https://www.instagram.com/onigiri_king/"
-          target="_blank"
-          rel="noreferrer"
-          {...getMouseHandlers("inst")}
-        >
-          {headerSvg("inst", isHover.inst)}
-        </a>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }

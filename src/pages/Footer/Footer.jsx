@@ -1,9 +1,11 @@
 import "./style.css";
 
 export default function PageFooter() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div id="footer-wrapper">
-      <p>Copyright © 2025. All rights are reserved</p>
-    </div>
+    <footer id="footer-wrapper">
+      <p>© {currentYear} Nikita Zamyshliaev. All rights reserved.</p>
+    </footer>
   );
 }

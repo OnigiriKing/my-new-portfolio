@@ -3,22 +3,32 @@ import aboutImg from "../../img/aboutImg.webp";
 
 export default function AboutPage() {
   return (
-    <div id="about-screen">
+    <section id="about-screen" aria-labelledby="about-title">
       <div className="about-image">
-        <img src={aboutImg} alt="aboutImage" />
+        <img
+          src={aboutImg}
+          alt="Nikita working on a software project"
+          loading="lazy"
+        />
       </div>
       <div className="about-des">
-        <p>ABOUT ME</p>
-        <p>Passionate Front-End React Developer based in Tokyo, Japan 🇯🇵</p>
+        <p className="section-label">ABOUT ME</p>
+        <h2 id="about-title">
+          Frontend-focused software engineer based in Tokyo, Japan 🇯🇵
+        </h2>
         <p>
-          Hello! I'm a front-end developer, proficient in React, JavaScript,
-          CSS, and HTML. With a true passion for clean and efficient code, I
-          thrive on turning ideas into engaging user experiences. My
-          problem-solving abilities and collaborative mindset, allows me to be a
-          good asset to any development team. Let's connect and explore how I
-          can bring value to your projects.
+          I have professional experience building internal business tools with
+          React, JavaScript, Redux, REST APIs, SCSS, and Git. I also develop
+          full-stack projects with TypeScript, Node.js, and PostgreSQL. I enjoy
+          turning business requirements into reliable, approachable interfaces
+          and collaborating across frontend and backend work.
         </p>
+        <ul className="credentials" aria-label="Qualifications">
+          <li>JLPT N2</li>
+          <li>ITPEC FE Certificate of Excellence</li>
+          <li>Professional experience in Japanese and international teams</li>
+        </ul>
       </div>
-    </div>
+    </section>
   );
 }
