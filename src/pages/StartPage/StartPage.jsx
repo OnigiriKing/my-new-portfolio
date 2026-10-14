@@ -1,8 +1,15 @@
 import React from "react";
 import "./style.css";
 import Typed from "typed.js";
-import { skillsSvg } from "../../svg/skillsSvg";
 import selfie from "../../img/selfie.webp";
+import reactIcon from "../../img/skills/react.svg";
+import typeScriptIcon from "../../img/skills/typescript.svg";
+import javaScriptIcon from "../../img/skills/javascript.svg";
+import reduxIcon from "../../img/skills/redux.svg";
+import nodeIcon from "../../img/skills/nodejs.svg";
+import postgreSqlIcon from "../../img/skills/postgresql.svg";
+import gitIcon from "../../img/skills/git.svg";
+import scssIcon from "../../img/skills/scss.svg";
 
 function TypeComponent() {
   const el = React.useRef(null);
@@ -36,16 +43,15 @@ function TypeComponent() {
 }
 
 export default function StartPage() {
-  const icons = React.useMemo(() => skillsSvg(44), []);
   const skills = [
-    { name: "React", icon: icons.react },
-    { name: "TypeScript", icon: icons.typeScript },
-    { name: "JavaScript", icon: icons.javaScript },
-    { name: "Redux", icon: icons.redux },
-    { name: "Node.js", icon: icons.node },
-    { name: "PostgreSQL", icon: icons.postgreSQL },
-    { name: "Git", icon: icons.git },
-    { name: "SCSS", icon: icons.scss },
+    { name: "React", icon: reactIcon },
+    { name: "TypeScript", icon: typeScriptIcon },
+    { name: "JavaScript", icon: javaScriptIcon },
+    { name: "Redux", icon: reduxIcon },
+    { name: "Node.js", icon: nodeIcon },
+    { name: "PostgreSQL", icon: postgreSqlIcon },
+    { name: "Git", icon: gitIcon },
+    { name: "SCSS", icon: scssIcon },
   ];
   
   return (
@@ -86,7 +92,7 @@ export default function StartPage() {
               {skills.map((skill) => (
                 <li className="skill" key={skill.name}>
                   <span className="skill-icon" aria-hidden="true">
-                    {skill.icon}
+                    <img src={skill.icon} alt="" decoding="async" />
                   </span>
                   <span className="skill-name">{skill.name}</span>
                 </li>
