@@ -1,19 +1,19 @@
 import kumoMarket from "./img/kumoMarket/kumoMarket.webp";
 import motoVibe from "./img/motoVibe/motoVibe.webp";
 import onigiriCrypto from "./img/onigiriCrypto/onigiriCrypto.webp";
-import iWishYouCouldReadThis from "./img/IWishYouCouldReadThis/"
+import iWishYouCouldReadThis from "./img/IWishYouCouldReadThis/IWishYouCouldReadThis-map.webp"
 
 
 const projectsList = {
   IWishYouCouldReadThis: {
     name: "I Wish You Could Read This",
     img: iWishYouCouldReadThis,
-    des: "Kumo Market is a minimalist e-commerce platform designed for straightforward and efficient online shopping. Discover a carefully curated selection of products in a clean and user-friendly environment.",
-    language: "React",
-    css: "SCSS",
-    codeLink: "https://github.com/OnigiriKing/kumo-market",
-    demoLink: "https://kumo-market.netlify.app",
-    key: "kumoMarket",
+    des: "A multilingual interactive map where people can share unsent messages, memories, and words they could not say directly. Built with React and TypeScript, it combines location-based message sharing with a responsive and reflective user experience.",
+    language: "React / TypeScript",
+    css: "Tailwind CSS",
+    codeLink: "https://github.com/OnigiriKing/i-wish-you-can-see-this",
+    demoLink: "https://i-wish-you-could-read-it.netlify.app",
+    key: "iWishYouCouldReadThis",
     transform: "translateY(-67%)",
     transformMobile: "translateY(-49%)",
   },
