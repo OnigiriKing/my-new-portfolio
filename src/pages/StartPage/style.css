@@ -1,176 +1,186 @@
-
-
-
 #start-screen {
-        background-color: var(--bg-color-gray);
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        z-index: 1;
-}
-
-#start-screen h1 {
-    font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  padding: 8rem 2rem 4rem;
+  background-color: var(--bg-color-gray);
 }
 
 .start-screen-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 0 4rem;
-    gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 68rem);
+  gap: 4rem;
 }
 
 .text-photo-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-}
-
-.start-screen-des  {
-    max-width: 50rem;
-    font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 600;
-    color: var(--bg-footer);
-}
-
-.auto-typing {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.sauto-typing p {
-    margin-right: 10px;
-}
-
-.start-screen-des p:nth-child(2) {
-    color: var(--start-page-welcome);
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.6;
-    
-}
-
-.start-screen-welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.start-screen-skills {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-}
-
-
-.start-screen-photo img {
-    height: 20rem;
-    transform: scale(1.1);
-    border: 3px solid var(--bg-footer);
-    border-radius: 71% 29% 61% 39% / 47% 49% 51% 53%;
-    animation:  BrAnimation 8s ease-in-out infinite;
-}
-
-
-
-@keyframes BrAnimation {
-    0% {
-        border-radius: 71% 29% 61% 39% / 47% 49% 51% 53%;
-    }
-
-
-    50% {
-        border-radius:  29% 71% 38% 62% / 33% 31% 69% 67%
-    }
-
-    to {
-        border-radius: 71% 29% 61% 39% / 47% 49% 51% 53%;
-    }
-}
-
-.start-screen-skills {
-    width: 100%;
-    gap: 4rem;
-}
-.start-screen-skills p  {
-    font-size: 1.3rem;
-    font-weight: 600;
-    border-right: 2px solid black;
-    padding-right: 1.5rem;
-}
-
-.skill-list {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    cursor: pointer;
-    list-style: none;
-}
-
-.skill {
-    padding: 2rem;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    position: relative;
-}
-
-.skill svg {
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-
-/* change checkpoint */
-
-@media (max-width: 900px) {
-    #start-screen {
-        height: auto;
-        padding: 8rem 0;
-
-    }
-    .text-photo-wrapper {
-    flex-direction: column-reverse;
-    gap: 3rem;
-}
-
-.auto-typing {
-    justify-content: center;
-    text-align: center;
-    height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
 .start-screen-des {
-    gap: 3rem;
+  max-width: 42rem;
+  color: var(--bg-footer);
 }
 
-.start-screen-des p:nth-child(2) {
-     text-align: center;
+.typing-lib {
+  min-height: 1.25em;
+  margin: 0;
+  font-size: clamp(2.4rem, 4vw, 3rem);
+  line-height: 1.2;
+  font-weight: 600;
+}
 
-    
+.start-screen-des > p {
+  margin-top: 1.25rem;
+  color: var(--start-page-welcome);
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  border: 2px solid var(--font-focus-color);
+  border-radius: 0.6rem;
+  padding: 0.65rem 1.1rem;
+  font-weight: 700;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button-primary {
+  background-color: var(--font-focus-color);
+  color: #fff;
+}
+
+.button-primary:hover {
+  background-color: #0f56bd;
+  border-color: #0f56bd;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: var(--font-focus-color);
+}
+
+.button-secondary:hover {
+  background-color: #eaf2ff;
+}
+
+.start-screen-photo img {
+  display: block;
+  width: min(20rem, 75vw);
+  height: auto;
+  border: 3px solid var(--bg-footer);
+  border-radius: 71% 29% 61% 39% / 47% 49% 51% 53%;
+  animation: border-animation 8s ease-in-out infinite;
+}
+
+@keyframes border-animation {
+  0%,
+  100% {
+    border-radius: 71% 29% 61% 39% / 47% 49% 51% 53%;
+  }
+
+  50% {
+    border-radius: 29% 71% 38% 62% / 33% 31% 69% 67%;
+  }
 }
 
 .start-screen-skills {
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
 }
-.start-screen-skills p  {
+
+.start-screen-skills > p {
+  flex: 0 0 auto;
+  margin: 0;
+  border-right: 2px solid currentColor;
+  padding: 0.55rem 1.5rem 0.55rem 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill {
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.55rem 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+  #start-screen {
+    padding-top: 7rem;
+  }
+
+  .text-photo-wrapper {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .start-screen-des {
     text-align: center;
-    border-right: none;
-    border-bottom: 2px solid black;
-    padding: 0 0.5rem;
-    padding-bottom: 1rem;
-}
+  }
+
+  .typing-lib {
+    min-height: 2.5em;
+  }
+
+  .hero-actions,
+  .start-screen-skills {
+    justify-content: center;
+  }
+
+  .start-screen-skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .start-screen-skills > p {
+    border-right: 0;
+    border-bottom: 2px solid currentColor;
+    padding: 0 0.5rem 0.75rem;
+  }
+
+  .skill-list {
+    justify-content: center;
+  }
 }
 
+@media (max-width: 500px) {
+  #start-screen {
+    padding-inline: 1.25rem;
+  }
 
+  .typing-lib {
+    font-size: 2.25rem;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 9rem;
+  }
+}

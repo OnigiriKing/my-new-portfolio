@@ -1,52 +1,39 @@
 #works-screen {
-  background-color: var(--bg-color-gray);
   display: flex;
   justify-content: center;
   padding: 8rem 0;
-  z-index: 1;
+  background-color: var(--bg-color-gray);
 }
-
 
 .portfolio-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 61rem;
-  margin: 0 5rem;
+  width: min(100%, 72rem);
+  padding: 0 2rem;
 }
 
-.portfolio-text p:nth-child(1) {
-    color: var(--font-focus-color);
-    font-size: 1.1rem;
-    font-weight: 600;
-   margin-bottom: 1rem;
-
+.portfolio-text .section-label {
+  margin: 0 0 1rem;
 }
-.portfolio-text p:nth-child(2) {
-    color: var(--bg-footer);
-    font-size: 1.7rem;
-    font-weight: 600;
-    line-height: 1.3;
-    margin-bottom: 4rem;
+
+.portfolio-text h2 {
+  margin: 0 0 4rem;
+  font-size: clamp(1.8rem, 3vw, 2.25rem);
+  line-height: 1.3;
 }
 
 .portfolio-projects {
   display: grid;
   gap: 3rem;
-  padding: 0 0rem;
 }
 
 .portfolio-website {
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-  background-color: #fff;
-  border-radius: 1.7rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  margin: 0 1.3rem;
-  padding: 1.5rem;
   gap: 3rem;
+  width: 100%;
+  border-radius: 1.7rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .website-reverse {
@@ -54,108 +41,128 @@
 }
 
 .website-img {
-  overflow: hidden;
-  width: 35rem;
+  flex: 1 1 58%;
+  width: min(35rem, 100%);
   height: 25rem;
-  background-color: rgba(117, 117, 117, 0.2);border-radius: 1.7rem;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  overflow: hidden;
+  border-radius: 1.7rem;
+  background-color: rgba(117, 117, 117, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.website-img a {
+  display: block;
+  height: 100%;
+}
 
 .website-img img {
-  height: auto;
+  display: block;
   width: 100%;
-   transform: translateY(0%);
-   transition: 10s ease-in-out;
+  height: auto;
+  transform: translateY(0);
+  transition: transform 7s ease-in-out;
 }
-
-
-
 
 .website-info {
   display: grid;
-  gap: 1.5rem;
-  width: 20rem;
+  flex: 1 1 42%;
+  gap: 1.25rem;
+  min-width: 0;
   text-align: center;
 }
 
-.website-info p:nth-child(1) {
-    color: var(--bg-footer);
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.3;
-
+.website-info h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.3;
 }
-.website-info p:nth-child(2) {
+
+.website-info > p {
+  margin: 0;
   color: var(--footer-font-color);
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.5;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .skills-used {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-self: center;
-  gap: 1rem;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.skills-used div {
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    padding: 0.5rem;
-    font-size: 1.3rem;
-    font-weight: 600;
+.skills-used li {
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .website-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-self: center;
-  gap: 2rem;
-   font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 1.5rem;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .website-links a {
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
 }
 
 .website-links a:hover {
   color: var(--font-focus-color);
 }
 
-
 @media (max-width: 1000px) {
   #works-screen {
-  padding: 7rem 0;
+    padding-block: 7rem;
+  }
+
+  .portfolio-text {
+    text-align: center;
+  }
+
+  .portfolio-website,
+  .website-reverse {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .website-img {
+    flex: none;
+    width: 100%;
+    height: 25rem;
+  }
+
+  .website-info {
+    width: min(100%, 36rem);
+  }
 }
 
-.portfolio-text {
-  display: grid;
-  text-align: center;
-}
-
+@media (max-width: 600px) {
   .portfolio-wrapper {
-  max-width: 50rem;
+    padding-inline: 1rem;
+  }
 
-}
+  .portfolio-website,
+  .website-reverse {
+    border-radius: 1.2rem;
+    padding: 1rem;
+  }
 
-
-  .portfolio-website {
-  flex-direction: column;
-  height: 50rem;
-  margin: 1rem 2rem;
-  gap: 2rem;
-}
-
-.website-img {
-  overflow: hidden;
-  width: fit-content;
-  height: 25rem;
-  border-radius: 1.7rem;
-}
+  .website-img {
+    height: 17rem;
+    border-radius: 1rem;
+  }
 }
