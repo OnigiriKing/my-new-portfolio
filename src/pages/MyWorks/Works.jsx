@@ -77,7 +77,7 @@ export default function WorksScreen() {
       <div className="portfolio-wrapper">
         <div className="portfolio-text">
           <p className="section-label">PORTFOLIO</p>
-          <h2 id="portfolio-title">Selected software projects</h2>
+          <h2 id="portfolio-title">Selected work, built with purpose</h2>
         </div>
         <div className="portfolio-projects">
           {displayProjects()}

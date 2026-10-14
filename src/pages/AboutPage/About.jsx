@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="about-des">
         <p className="section-label">ABOUT ME</p>
         <h2 id="about-title">
-          Frontend-focused software engineer based in Tokyo, Japan 🇯🇵
+          Software engineer with a frontend foundation based in Tokyo, Japan 🇯🇵
         </h2>
         <p>
           I have professional experience building internal business tools with
@@ -25,6 +25,7 @@ export default function AboutPage() {
         </p>
         <ul className="credentials" aria-label="Qualifications">
           <li>JLPT N2</li>
+          <li>HSK 5</li>
           <li>ITPEC FE Certificate of Excellence</li>
           <li>Professional experience in Japanese and international teams</li>
         </ul>

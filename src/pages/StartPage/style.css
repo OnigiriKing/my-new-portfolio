@@ -102,7 +102,7 @@
 
 .start-screen-skills {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -110,7 +110,7 @@
   flex: 0 0 auto;
   margin: 0;
   border-right: 2px solid currentColor;
-  padding: 0.55rem 1.5rem 0.55rem 0;
+  padding: 1rem 1.5rem 1rem 0;
   font-size: 1.15rem;
   font-weight: 700;
 }
@@ -118,18 +118,44 @@
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  justify-content: flex-start;
+  gap: 1rem 1.25rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .skill {
-  border-radius: 999px;
-  background: #fff;
-  padding: 0.55rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 4rem;
+  padding: 0;
+  color: #3f434a;
+  font-size: 0.78rem;
   font-weight: 600;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+  display: grid;
+  width: 4rem;
+  height: 4rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(45, 46, 50, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-icon svg {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.skill:hover .skill-icon {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 24px rgba(45, 46, 50, 0.14);
 }
 
 @media (max-width: 900px) {
@@ -168,6 +194,7 @@
 
   .skill-list {
     justify-content: center;
+    max-width: 25rem;
   }
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Typed from "typed.js";
+import { skillsSvg } from "../../svg/skillsSvg";
 import selfie from "../../img/selfie.webp";
 
 function TypeComponent() {
@@ -8,7 +9,7 @@ function TypeComponent() {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["React Developer", "Frontend Developer"],
+      strings: ["Software Engineer", "React Developer"],
       typeSpeed: 45,
       backSpeed: 25,
       backDelay: 1400,
@@ -24,7 +25,8 @@ function TypeComponent() {
   return (
     <h1 id="hero-title" className="typing-lib">
       <span className="sr-only">
-        Nikita Zamyshliaev — React and TypeScript Developer
+        Nikita Zamyshliaev — Software Engineer specializing in React and
+        TypeScript
       </span>
       <span aria-hidden="true">
         I'm a <span ref={el} />
@@ -34,15 +36,16 @@ function TypeComponent() {
 }
 
 export default function StartPage() {
+  const icons = React.useMemo(() => skillsSvg(44), []);
   const skills = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "Redux Toolkit",
-    "Node.js",
-    "REST APIs",
-    "PostgreSQL",
-    "Git",
+    { name: "React", icon: icons.react },
+    { name: "TypeScript", icon: icons.typeScript },
+    { name: "JavaScript", icon: icons.javaScript },
+    { name: "Redux", icon: icons.redux },
+    { name: "Node.js", icon: icons.node },
+    { name: "PostgreSQL", icon: icons.postgreSQL },
+    { name: "Git", icon: icons.git },
+    { name: "SCSS", icon: icons.scss },
   ];
   
   return (
@@ -54,9 +57,9 @@ export default function StartPage() {
               <TypeComponent />
             </div>
             <p>
-              Frontend-focused software engineer with professional React,
-              Redux, and REST API experience, building full-stack projects
-              with TypeScript, Node.js, and PostgreSQL.
+              Software engineer with professional frontend experience in
+              React, Redux, and REST APIs, plus full-stack projects built with
+              TypeScript, Node.js, and PostgreSQL.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#works-screen">
@@ -81,8 +84,11 @@ export default function StartPage() {
           <div>
             <ul className="skill-list">
               {skills.map((skill) => (
-                <li className="skill" key={skill}>
-                  {skill}
+                <li className="skill" key={skill.name}>
+                  <span className="skill-icon" aria-hidden="true">
+                    {skill.icon}
+                  </span>
+                  <span className="skill-name">{skill.name}</span>
                 </li>
               ))}
             </ul>

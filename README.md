@@ -7,9 +7,11 @@ frontend and full-stack projects.
 
 ## About
 
-I am a frontend-focused software engineer based in Tokyo. I have professional
-experience with React, JavaScript, Redux, REST APIs, SCSS, and Git, and I build
-full-stack projects with TypeScript, Node.js, and PostgreSQL.
+I am a software engineer with a frontend foundation based in Tokyo. I have
+professional experience with React, JavaScript, Redux, REST APIs, SCSS, and
+Git, and I build full-stack projects with TypeScript, Node.js, and PostgreSQL.
+My qualifications include JLPT N2, HSK 5, and an ITPEC FE Certificate of
+Excellence.
 
 ## Featured projects
 

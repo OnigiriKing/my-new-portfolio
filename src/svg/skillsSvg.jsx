@@ -78,6 +78,141 @@ const skillsSvg = {
       />
     </svg>
   ),
+  typeScript: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={width}
+      viewBox="0 0 64 64"
+    >
+      <rect width="60" height="60" x="2" y="2" rx="6" fill="#3178c6" />
+      <text
+        x="12"
+        y="46"
+        fill="#fff"
+        fontFamily="Arial, sans-serif"
+        fontSize="29"
+        fontWeight="700"
+      >
+        TS
+      </text>
+    </svg>
+  ),
+  redux: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={width}
+      viewBox="0 0 64 64"
+    >
+      <g fill="none" stroke="#764abc" strokeLinecap="round" strokeWidth="4">
+        <path d="M20 19c8-7 20-4 24 5" />
+        <path d="M44 27c3 10-4 20-14 21" />
+        <path d="M26 47c-10-2-15-13-10-22" />
+      </g>
+      <g fill="#764abc">
+        <circle cx="18" cy="20" r="6" />
+        <circle cx="46" cy="25" r="6" />
+        <circle cx="28" cy="48" r="6" />
+      </g>
+    </svg>
+  ),
+  node: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={width}
+      viewBox="0 0 64 64"
+    >
+      <path fill="#5fa04e" d="M32 3 57 17.5v29L32 61 7 46.5v-29L32 3Z" />
+      <text
+        x="13"
+        y="38"
+        fill="#fff"
+        fontFamily="Arial, sans-serif"
+        fontSize="17"
+        fontWeight="700"
+      >
+        NODE
+      </text>
+    </svg>
+  ),
+  postgreSQL: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={width}
+      viewBox="0 0 64 64"
+    >
+      <ellipse cx="32" cy="15" rx="21" ry="9" fill="#336791" />
+      <path
+        fill="#336791"
+        d="M11 15v29c0 5 9 9 21 9s21-4 21-9V15c-4 5-12 8-21 8s-17-3-21-8Z"
+      />
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeOpacity=".75"
+        strokeWidth="2"
+        d="M12 28c4 5 11 7 20 7s16-2 20-7M12 40c4 5 11 7 20 7s16-2 20-7"
+      />
+      <text
+        x="24"
+        y="20"
+        fill="#fff"
+        fontFamily="Arial, sans-serif"
+        fontSize="14"
+        fontWeight="700"
+      >
+        P
+      </text>
+    </svg>
+  ),
+  git: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={width}
+      viewBox="0 0 64 64"
+    >
+      <rect
+        width="42"
+        height="42"
+        x="11"
+        y="11"
+        rx="4"
+        fill="#f05032"
+        transform="rotate(45 32 32)"
+      />
+      <path fill="none" stroke="#fff" strokeWidth="4" d="m23 21 18 18M32 30v15" />
+      <g fill="#fff">
+        <circle cx="22" cy="20" r="4" />
+        <circle cx="32" cy="31" r="4" />
+        <circle cx="32" cy="46" r="4" />
+      </g>
+    </svg>
+  ),
+  scss: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={width}
+      viewBox="0 0 64 64"
+    >
+      <circle cx="32" cy="32" r="29" fill="#cf649a" />
+      <text
+        x="13"
+        y="40"
+        fill="#fff"
+        fontFamily="Arial, sans-serif"
+        fontSize="19"
+        fontStyle="italic"
+        fontWeight="700"
+      >
+        SCSS
+      </text>
+    </svg>
+  ),
 };
 
 return skillsSvg;

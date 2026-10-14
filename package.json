@@ -1,6 +1,6 @@
 {
   "name": "nikita-zamyshliaev-portfolio",
-  "description": "Portfolio website for Nikita Zamyshliaev, a React and TypeScript developer based in Tokyo.",
+  "description": "Portfolio website for Nikita Zamyshliaev, a software engineer based in Tokyo.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
